@@ -1,0 +1,37 @@
+.trip-card {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.trip-card:hover {
+  border-color: #00f;
+}
+
+.city-photo {
+  height: 65%;
+}
+
+.trip-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.city-name {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.dates {
+  margin: 0;
+  color: #adadad;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
