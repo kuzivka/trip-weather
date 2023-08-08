@@ -1,5 +1,5 @@
 .trip-card {
-  width: 200px;
+  min-width: 200px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@
 
 .city-photo {
   height: 65%;
+  object-fit: cover;
 }
 
 .trip-details {

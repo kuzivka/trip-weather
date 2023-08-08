@@ -1,0 +1,9 @@
+.trips-list {
+  padding: 40px 0;
+  display: flex;
+  gap: 36px;
+  overflow-x: scroll;
+}
+.trips-list::-webkit-scrollbar{
+  display: none;
+}
