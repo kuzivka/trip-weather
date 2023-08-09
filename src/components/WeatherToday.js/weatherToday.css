@@ -1,5 +1,6 @@
 .weather-today {
   width: 30%;
+  height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;

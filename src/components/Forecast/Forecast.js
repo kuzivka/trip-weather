@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useGetForecastQuery } from '../../services/weather';
 import WeatherCard from '../WeatherCard/WeatherCard';
+import './Forecast.css';
 
 export default function Forecast() {
   const tripId = useSelector((store) => store.trip.chosenTrip);
@@ -16,12 +17,18 @@ export default function Forecast() {
   }
 
   return (
-    <>
+    <><h2>Forecast</h2>
       {data && (
-        <div>
+        <div className="forecast">
+          
           {data.days.map((day) => (
-            <WeatherCard  />
-            <div>{day.temp}</div>
+            <WeatherCard
+              key={day.datetime}
+              date={day.datetime}
+              icon={day.icon}
+              maxTemp={day.tempmax}
+              minTemp={day.tempmin}
+            />
           ))}
         </div>
       )}

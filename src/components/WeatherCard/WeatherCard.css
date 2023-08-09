@@ -1,0 +1,20 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  /* width: 120px; */
+  height: 160px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+}
+
+.forecast-day {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a7a7a7;
+}
+.forecast-temp {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}

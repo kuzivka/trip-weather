@@ -1,0 +1,9 @@
+.forecast {
+  display: flex;
+  gap: 28px;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+.forecast::-webkit-scrollbar {
+  display: none;
+}
