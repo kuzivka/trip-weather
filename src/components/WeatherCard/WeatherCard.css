@@ -1,7 +1,6 @@
 .weather-card {
   display: flex;
   flex-direction: column;
-  /* width: 120px; */
   height: 160px;
   align-items: center;
   justify-content: space-between;
