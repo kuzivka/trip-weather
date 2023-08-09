@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useGetWeatherQuery } from '../../services/weather';
 import { backgrounds } from '../../common/bckgr';
-import './weatherToday.css';
+import './WeatherToday.css';
 import { DAYS_OF_WEEK } from '../../common/constants';
 import { icons } from '../../common/icons';
 import Timer from '../Timer/Timer';
