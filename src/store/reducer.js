@@ -3,14 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   trips: [
     {
-      id: 1,
+      id: 'kyiv',
       cityName: 'Kyiv',
-      startDate: '08.08.2023',
-      endDate: '15.08.2023',
+      startDate: '2023-08-10',
+      endDate: '2023-08-15',
     },
   ],
   searchQuery: '',
-  chosenTrip: 1,
+  chosenTrip: 'kyiv',
 };
 
 export const tripSlice = createSlice({

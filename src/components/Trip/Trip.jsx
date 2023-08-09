@@ -3,15 +3,19 @@ import './trip.css';
 import { cities } from '../../common/cities';
 import { useDispatch } from 'react-redux';
 import { chooseTrip } from '../../store/reducer';
+import { format } from 'date-fns';
 
 export default function Trip({ trip }) {
   const dispatch = useDispatch();
   const cityName = trip.cityName;
-  const dates = `${trip.startDate} - ${trip.endDate}`;
+  const dates = `${format(new Date(trip.startDate), 'dd.MM.yyyy')} - ${format(
+    new Date(trip.endDate),
+    'dd.MM.yyyy'
+  )}`;
   const photoUrl = cities.find((city) => city.name === cityName).img;
 
   const cardClickHandle = () => {
-    dispatch(chooseTrip(trip.cityName));
+    dispatch(chooseTrip(trip.id));
   };
 
   return (

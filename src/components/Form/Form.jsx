@@ -1,13 +1,13 @@
-import React, { useId, useState } from 'react';
+import React, { useState } from 'react';
 import { cities } from '../../common/cities';
 import './Form.css';
 import add from 'date-fns/add';
 import { useDispatch } from 'react-redux';
 import { addTrip } from '../../store/reducer';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Form() {
   const dispatch = useDispatch();
-  const id = useId();
 
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
@@ -38,7 +38,12 @@ export default function Form() {
     setCity(event.target.value);
   };
 
-  const createTrip = () => ({ id, startDate, endDate, cityName: city });
+  const createTrip = () => ({
+    id: uuidv4(),
+    startDate,
+    endDate,
+    cityName: city,
+  });
 
   const submitHandle = (event) => {
     event.preventDefault();

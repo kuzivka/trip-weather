@@ -1,0 +1,22 @@
+.timer {
+  display: flex;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.time-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.time {
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 1px 1px 4px white;
+}
+.time-name {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px white;
+}

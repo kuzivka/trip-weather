@@ -1,0 +1,41 @@
+.weather-today {
+  width: 30%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  height: 74px;
+  max-width: 130px;
+}
+.temp {
+  font-size: 64px;
+  padding-left: 4px;
+  text-shadow: 1px 1px 4px white;
+}
+.degre {
+  font-size: 18px;
+  align-self: self-start;
+  text-shadow: 1px 1px 4px white;
+}
+.week-day {
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px white;
+}
+.today-city {
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px white;
+}
