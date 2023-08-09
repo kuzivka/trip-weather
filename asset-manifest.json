@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/trip-weather/static/css/main.8364d982.css",
-    "main.js": "/trip-weather/static/js/main.3eded56a.js",
+    "main.js": "/trip-weather/static/js/main.fa9c4272.js",
     "index.html": "/trip-weather/index.html",
     "main.8364d982.css.map": "/trip-weather/static/css/main.8364d982.css.map",
-    "main.3eded56a.js.map": "/trip-weather/static/js/main.3eded56a.js.map"
+    "main.fa9c4272.js.map": "/trip-weather/static/js/main.fa9c4272.js.map"
   },
   "entrypoints": [
     "static/css/main.8364d982.css",
-    "static/js/main.3eded56a.js"
+    "static/js/main.fa9c4272.js"
   ]
 }
