@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trip-weather/static/css/main.f8e1e5bc.css",
+    "main.js": "/trip-weather/static/js/main.f8cb1ef2.js",
+    "index.html": "/trip-weather/index.html",
+    "main.f8e1e5bc.css.map": "/trip-weather/static/css/main.f8e1e5bc.css.map",
+    "main.f8cb1ef2.js.map": "/trip-weather/static/js/main.f8cb1ef2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8e1e5bc.css",
+    "static/js/main.f8cb1ef2.js"
+  ]
+}
