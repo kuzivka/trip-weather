@@ -1,14 +1,23 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { weatherApi } from '../services/weather';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import tripReducer from './reducer';
 
-export const store = configureStore({
-  reducer: {
-    [weatherApi.reducerPath]: weatherApi.reducer,
-    trip: tripReducer,
-  },
+const persistConfig = {
+  key: 'root',
+  storage,
+};
+const rootReducer = combineReducers({
+  [weatherApi.reducerPath]: weatherApi.reducer,
+  trip: tripReducer,
+});
 
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(weatherApi.middleware),
 });

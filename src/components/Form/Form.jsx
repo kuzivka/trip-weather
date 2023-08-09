@@ -17,7 +17,6 @@ export default function Form({ modalState, setModalState }) {
   const minDate = () => new Date().toISOString().split('T')[0];
   const maxDate = add(new Date(), { days: 15 }).toISOString().split('T')[0];
 
-  console.log(city);
   const focusHandle = (event) => {
     event.target.type = 'date';
   };

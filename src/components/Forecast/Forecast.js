@@ -12,9 +12,6 @@ export default function Forecast() {
   const { data } = useGetForecastQuery(
     trip.cityName + '/' + trip.startDate + '/' + trip.endDate
   );
-  if (data) {
-    console.log(data);
-  }
 
   return (
     <><h2>Forecast</h2>

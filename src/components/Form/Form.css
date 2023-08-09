@@ -104,3 +104,6 @@
 .input {
   cursor: pointer;
 }
+input[type='date'] {
+  cursor: pointer;
+}
