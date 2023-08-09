@@ -1,5 +1,5 @@
 import React from 'react';
-import './trip.css';
+import './Trip.css';
 import { cities } from '../../common/cities';
 import { useDispatch } from 'react-redux';
 import { chooseTrip } from '../../store/reducer';
