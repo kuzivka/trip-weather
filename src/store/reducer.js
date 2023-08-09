@@ -5,8 +5,8 @@ const initialState = {
     {
       id: 'kyiv',
       cityName: 'Kyiv',
-      startDate: '2023-08-10',
-      endDate: '2023-08-15',
+      startDate: '2023-08-23',
+      endDate: '2023-08-24',
     },
   ],
   searchQuery: '',
