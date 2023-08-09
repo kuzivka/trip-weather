@@ -19,7 +19,9 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 export const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(weatherApi.middleware),
+    getDefaultMiddleware({ serializableCheck: false }).concat(
+      weatherApi.middleware
+    ),
 });
 
 setupListeners(store.dispatch);
