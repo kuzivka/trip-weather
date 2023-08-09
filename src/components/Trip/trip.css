@@ -28,12 +28,10 @@
 .city-name {
   margin: 0;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 .dates {
   margin: 0;
   color: #adadad;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
 }

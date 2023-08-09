@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 4px;
+  width: 100px;
+}
+
+.forecast-icon{
+  width: 70%;
 }
 
 .forecast-day {
